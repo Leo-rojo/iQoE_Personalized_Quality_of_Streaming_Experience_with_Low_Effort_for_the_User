@@ -1,0 +1,5 @@
+## Generate realistic videostreaming experiences:
+* The folder 'park' contains the used simulator, the original code can be found in 'https://github.com/park-project/park'. We have already inserted the elaborated throughput traces and video_sizes.
+* 'Agent_class' contains implementations of various ABRs.
+* Folder chunk_features contains the precalculated features for different encodings of the original video (Tears of Steel)
+* Run 'Simulation.py' to generate three npy files 'exp_bb', 'exp_mpc', 'exp_th' containing videostreaming experience for different ABRs. Put the files in 'experience_collection' and  run 'map_bit_to_chunk_features.py' to produce the videostreaming experience with features information for each chunk. The final files is called 'experiences_with_features.npy'. It needs to be copied in Synthetic_users_generation.
